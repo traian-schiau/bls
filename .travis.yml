@@ -16,7 +16,7 @@ install:
 
 script:
 - make clean
-- make lib/libbls384_256.a
+- make minimized_static
 
 before_deploy:
 - mv lib/libbls384_256.a lib/$TRAVIS_OS_NAME-$TRAVIS_CPU_ARCH-libbls384_256.a
